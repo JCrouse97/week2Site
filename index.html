@@ -6,65 +6,112 @@
   </head>
   <body>
 
+    <h1>Table of Contents</h1>
+    <ul >
+      <li><a href="#headers"> Headers </a></li>
+      <li><a href="#ps">Ps and Spans</a></li>
+      <li><a href="#imgs">IMGs</a></li>
+      <li><a href="#code">Code Quotes</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#videos">Video</a></li>
+      <li><a href="#tables">Tables</a></li>
+    </ul>
+    <hr>
+
     <!--Headers  -->
-    <h1><strong>Header 1</strong></h1>
+    <h1 id="headers"><strong>Header 1</strong></h1>
     <h2>Header 2</h2>
     <h3>Header 3</h3>
     <h4>Header 4</h4>
     <h5>Header 5</h5>
     <h6>Header 6</h6>
+    <hr>
 
     <!-- Ps and spans -->
-    <span>
+    <span id="ps">
       Array, Inc <br>
       1607 Capitol Avenue <br>
       Cheyenne, WY 82082
     </span>
+    <hr>
 
     <!-- IMG -->
-    <br>
+    <br id=imgs>
     <br>
 
     <!-- A Tags -->
     <a href="https://www.arrayschool.com" target="_blank"><img src="images/dog.jpg" alt="" width="400"></a>
+    <hr>
 
     <!-- Code -->
-<code>Hello!</code>
+    <code id=code>Hello!</code>
 
-<blockquote cite="http://arrayschool.com">
-Hi there!
-</blockquote>
+    <blockquote cite="http://arrayschool.com">
+    Hi there!
+    </blockquote>
+    <hr>
 
-<!-- Lists -->
-<ol>
-  <li>Pizza</li>
-  <li>Cheese Burger</li>
-  <li>Pizza Rolls</li>
-  <ol>
-    <li>list 1</li>
-    <li>list 2</li>
+  <!-- Lists -->
+  <ol id=lists>
+    <li>Pizza</li>
+    <li>Cheese Burger</li>
+    <li>Pizza Rolls</li>
+    <ol>
+      <li>list 1</li>
+      <li>list 2</li>
+    </ol>
   </ol>
-</ol>
 
-<ul>
-  <li>item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
+  <ul>
+    <li>item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <hr>
 
   <!--video  -->
-  <video width="400" autoplay autobuffer loop class="hero-video">
-  							<source src="https://s3-us-west-2.amazonaws.com/array-s3/assets/media/video/web/array_hero_video.mp4" type="video/mp4">
-  </video> <br>
+  <h2 id=videos>Youtube with iframe tag</h2>
+<iframe width="400" height="250" src="https://www.youtube.com/embed/7w_TviVgw1E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
 
-  <video src="Media/Forest_15_3b_Videvo.mov"  loop autoplay poster="posterimage.jpg" width="400">
-    <source src="Media/Forest_15_3b_Videvo.mp4" type="video/mp4">
-    <source src="Media/Forest_15_3b_Videvo.mov" type="video/mov">
-    <source src="Media/Forest_15_3b_Videvo.ogg" type="video/ogg">
+<h2>Website with iframe tag</h2>
+<iframe src="https://www.arrayschool.com/index.html" width="400" height="250">
+</iframe> <br>
 
-  </video> <br>
+<h2>External link with Video tag (plus nested webm source)</h2>
+<video     src="https://s3.amazonaws.com/files.arrayschool.com/online/classroom/09_11_2018-classroom-recording-am-packet-1of2.mp4" autoplay poster="posterimage.jpg" width="400">
+  <source src="https://s3.amazonaws.com/files.arrayschool.com/online/classroom/09_11_2018-classroom-recording-am-packet-1of2.mp4" type="video/mp4">
 
-  <iframe width="400" height="250" src="https://www.youtube.com/embed/7w_TviVgw1E" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+  <source src="https://s3.amazonaws.com/files.arrayschool.com/online/classroom/09_11_2018-classroom-recording-am-packet-1of2.webm" type="video/webm">
+
+</video>
+
+<h2>Internal video with video tag</h2>
+<video src="media/Forest_15_3b_Videvo.mov" width="400" autoplay poster="posterimage.jpg">
+
+</video>
+<hr>
+
+<!-- Tables -->
+<table id=tables>
+  <tr>
+    <th>Name</th>
+    <th>Mailing Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip Code</th>
+    <th>Email</th>
+
+  </tr>
+  <tr>
+    <td><button>Jordan Crouse</button></td>
+    <td>604 Miller St</td>
+    <td>Pine Bluffs</td>
+    <td>Wy</td>
+    <td>82082</td>
+    <td><a href="mailto:jcrouse1997@gmail.com">jcrouse1997@gmail.com</a></td>
+  </tr>
+</table>
 
 
 
